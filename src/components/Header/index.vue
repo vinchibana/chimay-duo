@@ -13,7 +13,7 @@
         </div>
         <div class="typeList">
           <a href="#">我的订单</a>
-          <a href="#">我的购物车</a>
+          <router-link to="/shopcart">我的购物车</router-link>
           <a href="#">我的</a>
           <a href="#">会员</a>
           <a href="#">企业采购</a>
@@ -26,7 +26,7 @@
     <!--头部第二行 搜索区域-->
     <div class="bottom">
       <h1 class="logoArea">
-        <router-link to="/home" class="logo" href="#" target="_blank">
+        <router-link to="/home" class="logo">
           <img src="@/assets/logo.png" alt="" />
         </router-link>
       </h1>

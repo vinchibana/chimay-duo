@@ -1,12 +1,16 @@
 import Vue from "vue";
-import Vuex from 'vuex'
+import Vuex from "vuex";
 import home from "@/store/home";
 import search from "@/store/search";
-Vue.use(Vuex)
+import detail from "@/store/detail";
+import shopcart from "@/store/shopcart"
+Vue.use(Vuex);
 
 export default new Vuex.Store({
-  modules:{
+  modules: {
     home,
-    search
-  }
-})
+    search,
+    detail,
+    shopcart
+  },
+});

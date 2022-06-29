@@ -12,3 +12,18 @@ export const reqFloorList = () =>
 
 export const reqGetSearchInfo = (params) =>
   requests({ url: "/list", method: "post", data: params });
+
+export const reqGoodsInfo = (skuId) =>
+  requests({ url: `/item/${skuId}`, method: "get" });
+
+export const reqAddOrUpdateCart = (skuId, skuNum) =>
+  requests({ url: `/cart/addToCart/${skuId}/${skuNum}`, method: "post" });
+
+export const reqCartList = () =>
+  requests({ url: "/cart/cartList", method: "get" });
+
+export const reqDeleteCartById = (skuId) =>
+  requests({ url: `/cart/deleteCart/${skuId}`, method: "delete" });
+
+export const reqUpdateCartStatus = (skuId, isChecked) =>
+  requests({ url: `/cart/checkCart/${skuId}/${isChecked}`, method: "get" });
